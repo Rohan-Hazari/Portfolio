@@ -1,0 +1,44 @@
+section{
+    z-index: 3;
+}
+.floating{
+    position: fixed;
+    top: 10%;
+    left: 0;
+    height: 90%;
+    display:flex;
+    flex-direction: column;
+    gap: 7%;
+    z-index: 2;
+}
+
+.floating li{
+    list-style: none;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    box-shadow: 0 0 20px 1px rgba(0, 98, 255, 0.624) , 0 0 25px 1px white;
+    
+}
+
+.floating li:nth-child(even){
+    animation: blink 15s ease-in infinite;
+    animation-duration: calc(15s/var(--n));
+}
+.floating li:nth-child(odd){
+    animation: blink 15s ease-in infinite;
+    animation-duration: calc(30s/var(--n));
+}
+
+@keyframes blink{
+    0%{
+        /* box-shadow: 0 0 0 1px transparent ; */
+        transform: translateX(-2vw) scale(calc(1/var(--n)));
+    }
+    100%{
+        /* box-shadow: 0 0 20px 1px rgba(0, 98, 255, 0.624) , 0 0 25px 1px white; */
+        transform: translateX(102vw) scale(1);
+        background-color:#3991f9 ;
+    }
+}

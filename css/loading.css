@@ -1,0 +1,98 @@
+
+.navbar{
+    animation: nav-load 0.5s ease-out;
+}
+
+
+@keyframes nav-load{
+    0%{
+        transform: translateY(-150%) ;
+       
+    }
+    100%{
+        transform: translateY(0%);
+    }
+
+}
+
+.home-box h1{
+    animation: slide-right 1s ease-in-out ;
+
+}
+.home-box h2{
+    animation: slide-right 1s ease-in-out ;
+
+}
+.home-box p{
+    animation: para-slide-right 1s ease-in-out ;
+    
+}
+.resume-btn{
+    
+    animation: btn-show 1s ease-in-out ;
+    
+    
+}
+
+@keyframes slide-right{
+    0%{
+        opacity: 0;
+        transform: translateX(-8%);
+    }
+  
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+@keyframes name-slide-right{
+    0%{
+        opacity: 0;
+        transform: translateX(-15%);
+    }
+  
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+@keyframes para-slide-right{
+    0%{
+        opacity: 0;
+        transform: translateX(-18%);
+    }
+  
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+@keyframes btn-show{
+    0%{
+        opacity: 0;
+        transform: translateX(-90%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.profile-img{
+    
+    animation: load-img 1s ease-in-out;
+
+}
+
+@keyframes load-img{
+    0%{
+        opacity: 0;
+        transform: translateX(18%);
+    }
+  
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+    

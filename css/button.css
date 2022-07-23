@@ -1,0 +1,40 @@
+.resume-btn{
+    /* border: 2px solid var(--f-color); */
+    /* border: 2px solid #3991F9; */
+
+    font-family: var(--ff-tfont);
+    font-size: 1.25rem;
+    font-weight:300;
+
+    width: 120px;
+
+    margin: 0.25rem 1rem ;
+    padding: 0.5rem 0.65rem;
+    /* letter-spacing: 1px; */
+
+    text-align: center;
+
+    transition: all 0.2s ease-in-out;
+
+}
+.resume-btn:hover{
+   
+    
+    transform: scale(0.9);
+    
+    
+}
+
+.btn::before{
+
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 100%;
+}
+
+.resume-btn a{
+    color: var(--f-color);
+    /* color:#3991F9; */
+    text-decoration: none;
+}
