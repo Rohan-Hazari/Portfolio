@@ -89,10 +89,26 @@ html{
     height: 100%;
     background: url(/images/layered-waves-haikei.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
+
+    background-position: 10% 10%  ;
     
     background-attachment:fixed;
     z-index: 3; 
+
+    animation: wave 20s infinite alternate-reverse ease;
+}
+
+@keyframes wave{
+    0%{
+        background-position: left 0%;
+        
+        
+    }
+    100%{
+        background-position: left 100%;
+       
+    }
 }
 
 .navbar{
