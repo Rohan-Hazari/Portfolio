@@ -269,6 +269,14 @@ main{
     margin: 0 0 0 5px;
 }
 
+.fa-heart{
+    color: rgb(255, 0, 51);
+    transition: 0.2s all ease ;
+}
+.fa-heart:hover{
+    transform: scale(1.1);
+}
+
 
     
 
