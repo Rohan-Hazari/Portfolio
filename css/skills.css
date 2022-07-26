@@ -38,142 +38,22 @@
     gap: 45px;
     width: 70%;
 }
+.language,.framework{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.skill-box p{
+    color: var(--primary-heading-color);
+    font-size: 1.25rem;
+}
 
 .skill-icons{
     display: flex;
-    /* justify-content: space-between; */
-    align-items: center;
-    gap: 5rem;
-    flex-wrap: wrap;
-    
-
+    gap: 1rem;
 }
 
-.fa-brands{
-    color: var(--primary-heading-color);
-    background-color: transparent;
-    font-size: 3.5rem;
-    position: relative;
-    
-
-}
-
-.skill-icons .fa-brands:nth-child(1)::after{
-    content: "HTML";
-    position: absolute;
-    left: 20%;
-    font-size: 1rem;
-    font-family: var(--ff-font);
-    display: flex;
-    margin:10px 0;
-    
-
-}
-.skill-icons .fa-brands:nth-child(2)::after{
-    content: "CSS";
-    position: absolute;
-    left: 20%;
-    font-size: 1rem;
-    font-family: var(--ff-font);
-    display: flex;
-    margin:10px 0;
-    
-
-}
-.skill-icons .fa-brands:nth-child(3)::after{
-    content: "JavaScript";
-    position: absolute;
-    left: -35%;
-    font-size: 1rem;
-    font-family: var(--ff-font);
-    display: flex;
-    margin:10px 0;
-    
-
-}
-.skill-icons .fa-brands:nth-child(4)::after{
-    content: "Node.js";
-    position: absolute;
-    left: -10%;
-    font-size: 1rem;
-    font-family: var(--ff-font);
-    display: flex;
-    margin:10px 0;
-    
-
-}
-.skill-icons .fa-brands:nth-child(5)::after{
-    content: "React.js";
-    position: absolute;
-    left: -10%;
-    font-family: var(--ff-font);
-    font-size: 1rem;
-    display: flex;
-    margin:10px 0;
-
-}
-
-.express::after{
-    content: "express.js";
-    color: var(--primary-heading-color);
-    
-    font-style: normal;
-    font-size: 1.5rem;
-    font-weight: 100;
-    font-family: var(--ff-tfont);
-    display: flex;
-    align-items: center;
-}
-.postgresql{
-    width: 66px;
-    height: 66px;
-    color: var(--primary-heading-color);
-}
-.postgresql::after{
-    content: "PostgreSQL";
-    color: var(--primary-heading-color);
-    
-    font-style: normal;
-    font-size: 1rem;
-    /* font-weight: 100; */
-    font-family: var(--ff-font);
-    display: flex;
-    align-items: center;
-}
-.want-to-learn{
-    margin-top: 1rem;
-    font-size: 1.25rem;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-.tech-list{
-    display: flex;
-    gap: 100px;
-}
-
-.tech-list ul li{
-    list-style: none;
-    color: var(--primary-heading-color);
-    position: relative;
-    
-}
-
-.tech-list ul li::before{
-    content: " ";
-    position: absolute;
-    top: 25%;
-    left: -15%;
-    background-color: var(--f-color);
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-
-
-}
-
-.wtl-box{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.smg{
+    height: 70px;
+    width: 70px;
 }
