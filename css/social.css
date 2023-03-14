@@ -5,8 +5,12 @@
     font-size: 1.75rem;
     display: flex;
     flex-direction: column;
-    color: var(--b-color);
+    
     gap: 1rem;
+
+}
+.social a{
+    color: var(--b-color);
 
 }
 .social::after{
@@ -15,6 +19,6 @@
     left:3.8rem;
     bottom: 0;
     width: 1px;
-    height: 13%;
+    height: 13.5%;
     background: linear-gradient(180deg,var(--b-color) ,transparent 100%);
 }
