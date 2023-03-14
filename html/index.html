@@ -21,28 +21,20 @@
     <link rel="stylesheet" href="/css/about.css">
     <link rel="stylesheet" href="/css/button.css">
     <link rel="stylesheet" href="/css/skills.css">
-    <!-- <link rel="stylesheet" href="/css/wave.css"> -->
-    <!-- <link rel="stylesheet" href="/css/float.css"> -->
+    <link rel="stylesheet" href="/css/project.css">
+    <link rel="stylesheet" href="/css/social.css">
 
 </head>
 
+<section class="preloader">
+    <div class="lds-ripple">
+        <div></div>
+        <div></div>
+    </div>
+</section>
+
 <body class="body">
 
-    <!-- <div class="bg-body-wrapper"></div>
-    <ul class="floating">
-        <li style=" --n:14"></li>
-        <li style=" --n:12"></li>
-        <li style=" --n:33"></li>
-        <li style=" --n:7"></li>
-        <li style=" --n:5"></li>
-        <li style=" --n:9"></li>
-        <li style=" --n:17"></li>
-        <li style=" --n:8"></li>
-        <li style=" --n:9"></li>
-        <li style=" --n:10"></li>
-        <li style=" --n:11"></li>
-        
-    </ul> -->
 
 
     <div class="sub-body">
@@ -61,9 +53,9 @@
                 <li><a class="link home" href="#home">Home</a></li>
                 <li><a class="link contact" href="#aboutmyself">About Me</a>
                 </li>
-                <li><a class="link skills" href="#skill">Skills</a></li>
+                <!-- <li><a class="link skills" href="#skill">Skills</a></li> -->
                 <li><a class="link project" href="#project">Projects</a></li>
-                <li><a class="link education" href="#education">Education</a>
+
                 </li>
 
 
@@ -88,10 +80,31 @@
                             while also exploring and
                             learning other fun technologies .
                         </p>
-                        <h1>Technologies I <i class="fa-solid fa-heart"></i>
-                        </h1>
+                        <p style="color:var(--primary-heading-color)">
+                            Technologies I use
+                        </p>
+                        <ul class="skill-list">
+                            <li> <img src="/images/html.svg" alt="HTML icon">
+                                HTML</li>
+                            <li> <img src="/images/css.svg" alt="CSS icon"> CSS
+                            </li>
+                            <li><img src="/images/javascript.svg"
+                                    alt="Javascript icon">
+                                Javascript</li>
+                            <li><img src="/images/react.svg" alt="React icon">
+                                React.js</li>
+                            <li><img src="/images/icons8-mongodb-color/icons8-mongodb-30.png"
+                                    alt=""> MongoDB</li>
+                            <li><img src="/images/nodejs.svg" alt=""> Node.js
+                            </li>
+                            <li><img src="/images/icons8-express-js-office/icons8-express-js-30.svg"
+                                    alt=""> Express.js</li>
+                            <li><img src="/images/java.svg" alt=""> Java</li>
+                            <li><img src="/images/c.svg" alt=""> C</li>
 
-                        <!-- give a bit intro about urself and the option for resume and shit -->
+                        </ul>
+
+
                     </div>
 
                 </section>
@@ -122,69 +135,124 @@
                     </div>
                     <div class="image profile-img">
                         <div class="wrapper">
-                            <img src="/images/2022-06-26 (6)_edited.jpg"
-                                alt="Profile photo">
+                            <img src="/images/laptop.png" alt="Profile photo">
                         </div>
                     </div>
-                    <!-- 
-                     -->
+
 
                 </section>
 
 
 
-                <section id="skill">
+                <!-- <section id="skill">
                     <h2>Skills</h2>
                     <div class="skill-box">
                         <div class="language">
-                            <p>Programming Languages :</p> 
+                            <p>Programming Languages :</p>
                             <div class="skill-icons">
-                                <img class="smg" src="/images/java.svg" alt="Java">
+                                <img class="smg" src="/images/java.svg"
+                                    alt="Java">
                                 <img class="smg" src="/images/c.svg" alt="C">
-                                <img class="smg" src="/images/python.svg" alt="python">
-                                <img class="smg" src="/images/html.svg" alt="HTML">
-                                <img class="smg" src="/images/sass.svg" alt="CSS/Sass">
-                                <img class="smg" src="/images/javascript.svg" alt="Javascript">
+                                <img class="smg" src="/images/python.svg"
+                                    alt="python">
+                                <img class="smg" src="/images/html.svg"
+                                    alt="HTML">
+                                <img class="smg" src="/images/sass.svg"
+                                    alt="CSS/Sass">
+                                <img class="smg" src="/images/javascript.svg"
+                                    alt="Javascript">
                             </div>
                         </div>
                         <div class="framework">
                             <p>Librarie's and Framework :</p>
                             <div class="skill-icons">
-                                <img class="smg" src="/images/react.svg" alt="React.js">
-                                <img class="smg" src="/images/nodejs.svg" alt="node.js">
-                                <img class="smg" src="/images/express.svg" alt="express.js">
+                                <img class="smg" src="/images/react.svg"
+                                    alt="React.js">
+                                <img class="smg" src="/images/nodejs.svg"
+                                    alt="node.js">
+                                <img class="smg" src="/images/express.svg"
+                                    alt="express.js">
 
                             </div>
                         </div>
-
-
-
-
                     </div>
-                </section>
+                </section> -->
+
+
                 <section id="project">
-                    <div style="color: white;" class="project-box">
-                        Projects isssssss
+                    <div class="project-box">
+                        <h2>Project</h2>
+                        <div class="project-content">
+                            <a href="https://rohan-travel-advisor-2023.netlify.app/"
+                                class="project-card card">
+                                <div class="card-img">
+                                    <img src="../images/Travel_advisor.png"
+                                        alt="project-image">
+                                </div>
+                                <div class="card-text">
+                                    <ul class="tags">
+                                        <li>React</li>
+                                        <li>Material UI</li>
+                                    </ul>
+                                    <p>A Travel Advisor website to look for
+                                        various restaurants,hotels and
+                                        attraction</p>
+                                </div>
+                            </a>
+                            <a href="https://github.com/Rohan-Hazari/Spring-Movie-API-Frontend"
+                                class="project-card card">
+                                <div class="card-img">
+                                    <img src="../images/IMDB clone.png"
+                                        alt="project-image">
+                                </div>
+                                <div class="card-text">
+                                    <ul class="tags">
+                                        <li>React</li>
+                                        <!-- <li>Material UI</li> -->
+                                        <li>SpringBoot</li>
+                                        <li>MongoDB</li>
+                                    </ul>
+                                    <p>A IMDB clone made with custom API where u
+                                        can watch trailers and write reviews
+                                    </p>
+                                </div>
+                            </a>
+                            <a href="https://rauh-course-2022.netlify.app/"
+                                class="project-card card">
+                                <div class="card-img">
+                                    <img src="../images/Corsira.png"
+                                        alt="project-image">
+                                </div>
+                                <div class="card-text">
+                                    <ul class="tags">
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Javascript</li>
+                                    </ul>
+                                    <p>A static responsive website with smooth
+                                        loading
+                                        animation and a fully functional contact
+                                        form</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </section>
-                <section id="education">
-                    <div class="education-box">
-                        <!-- a simple or using a scroll animation a timeline of ur education -->
-                    </div>
-                </section>
+
                 <section id="contact">
                     <div class="contact-box">
-                        <!-- all the insta github email twitter etc -->
+
                     </div>
                 </section>
             </div>
         </main>
 
-        <div class="social">
-            <div class="insta">
+        <section class="social">
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-twitter"></i>
 
-            </div>
-        </div>
+            <i class="fa-brands fa-linkedin"></i>
+        </section>
 
 
 

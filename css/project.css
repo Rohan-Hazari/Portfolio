@@ -1,0 +1,87 @@
+#project{
+    min-height: 100vh;
+    color: var(--primary-text-color);
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: var(--c-padding);
+    gap: 80px;
+
+    scroll-margin-top: 20vh;
+}
+
+.project-box h2{
+    color: var(--primary-heading-color);
+    font-size: 2.5rem;
+    font-weight: 400;
+    padding-bottom: 0.25rem;
+    
+   
+    position: relative;
+}
+
+.project-box h2::after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    
+    
+    width: 50vw;
+    height: 4px;
+    background: linear-gradient(90deg,var(--secondary-color) ,transparent 100%);
+}
+
+.project-content{
+    margin-top: 2rem;
+    /* border: 2px solid red; */
+    display:flex;
+    /* flex-direction: row; */
+    gap: 2rem;
+    flex-wrap: wrap;
+    
+}
+.project-content a{
+    text-decoration: none;
+   
+}
+.card{
+    
+    /* border: 2px solid yellow; */
+    width: calc(100%/3 - 2rem);
+    /* box-shadow: 1px 1px 5px  var(--secondary-color); */
+    background-color: var(--bg-color-header);
+    backdrop-filter:  blur(6px);
+
+}
+.card img{
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.card-text p{
+    padding: 0 1rem 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color:var(--primary-heading-color)
+
+}
+.tags{
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    justify-content: space-around;
+    color: var(--secondary-color);
+    
+}
+.tags li{
+    padding: 0.2rem 0.5rem ;
+    border-radius: 5px;
+    border: 1px solid var(--secondary-color);
+    background-color: var(--bg-color);
+    list-style: none;
+    
+}

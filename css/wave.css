@@ -3,7 +3,7 @@
     /* overflow: hidden; */
 }
 
-.bg-body-wrapper{
+/* .bg-body-wrapper{
     position: absolute;
     top: 0;
     left: 0;
@@ -11,7 +11,7 @@
     height: 80%;
     
     
-    /* background: url(/images/Frame.svg); */
+    /* background: url(/images/Frame.svg); 
     background-repeat: repeat-y;
     background-size: contain;
     overflow-y: hidden;
@@ -20,7 +20,7 @@
     z-index:-2 ;
 
     animation: wave linear 3s alternate-reverse infinite;
-}
+} */
 
 @keyframes wave{
     0%{

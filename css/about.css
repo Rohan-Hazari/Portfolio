@@ -6,7 +6,8 @@
     justify-content: space-between;
 
     padding: var(--c-padding);
-    gap: 80px;
+    gap: 8rem;
+    scroll-margin-top: 20vh;
 }
 
 .about-box{
@@ -66,7 +67,7 @@
    
 }
 
-.wrapper::before{
+/* .wrapper::before{
     content: " ";
     display: block;
     position: absolute;
@@ -83,7 +84,7 @@
 .wrapper:hover::before{
     background-color: hsla(213, 94%, 60%, 0);
 }
-
+ */
 
 
 

@@ -11,7 +11,7 @@
     --resume-hover:#2a5faf64;
     --bg-color-header:rgb(10 25 47 / 85%);
     --primary-heading-color:#E3F0FF;
-    --secondary-color:#3991F9;
+    --secondary-color:#3991f9;
     --primary-text-color:#8892b0;
     --fb-color:#64ffda;
 
@@ -47,7 +47,7 @@ html{
 }
 
 ::-webkit-scrollbar-thumb{
-    height: 12vh;
+    height: 6vh;
     background:var(--f-color);
     
     border-radius:100vw;
@@ -64,6 +64,9 @@ html{
     }
 } */
 
+.section{
+    margin-top: 6rem;
+}
 
 
 
@@ -72,18 +75,18 @@ html{
     background-color: var(--bg-color);
     min-height: 100vh;
 
+    scroll-padding-top: 80px;
+
     transition: all 0.3s ease;
     position: relative;
 
     z-index: 1;
     
-
+    overflow-x: hidden;
     
     
    
 }
-
-
 .sub-body{
     width: 100%;
     height: 100%;
@@ -96,8 +99,10 @@ html{
     background-attachment:fixed;
     z-index: 3; 
 
-    animation: wave 20s infinite alternate-reverse ease;
+    animation: wave 20s infinite alternate-reverse linear;
 }
+
+
 
 @keyframes wave{
     0%{
@@ -186,6 +191,7 @@ html{
 
 
 
+
 .link{
     
 
@@ -226,6 +232,7 @@ main{
     min-height: 100vh;
     margin: auto;
     padding: var(--c-padding); 
+    scroll-margin-top: 20vh;
 
     display: flex;
     justify-content:left;
@@ -286,16 +293,55 @@ mark{
 }
 
 
-
-
-@media screen and (max-width:900px){
-    .navbar{
-        font-size: 1rem;
-    }
+.skill-list{
+    color: var(--primary-heading-color);
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
+    display: grid;
+    row-gap: 1rem;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: start;
 }
- 
 
- @media screen and (max-width:750px) { 
+.skill-list li{
+    display: flex;
+    column-gap: 0.5rem;
+    align-items: center;
+    text-align:end
+}
+
+li img{
+    align-self: center;
+    width: 25px;
+}
+
+
+
+ @media screen and (max-width:900px) { 
+    #home,#aboutmyself,#project{
+        padding: 0 !important;
+    }
+
+    .sub-body{
+        
+        background-size: cover;
+        background-repeat: repeat-y;
+    }
+    .skill-list{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .project-content{
+        flex-direction: column;
+    }
+
+    .card{
+        width: 100% !important; 
+    }
+    
+    .profile-img{
+        display: none;
+    }
    
     .navbar{
 
