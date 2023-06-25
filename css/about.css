@@ -9,7 +9,13 @@
     gap: 8rem;
     scroll-margin-top: 20vh;
 }
-
+@media screen and (max-width:1200px) {
+    #aboutmyself{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
 .about-box{
     display: flex;
     flex-direction: column;
@@ -63,7 +69,7 @@
 .wrapper{
     position: relative;
     display: block;
-    width:80%
+    /* width:80% */
    
 }
 

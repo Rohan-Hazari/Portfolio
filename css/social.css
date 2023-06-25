@@ -9,6 +9,9 @@
     gap: 1rem;
 
 }
+.social-nav{
+    display: none;
+}
 .social a{
     color: var(--b-color);
 
@@ -21,4 +24,26 @@
     width: 1px;
     height: 13.5%;
     background: linear-gradient(180deg,var(--b-color) ,transparent 100%);
+}
+
+@media screen and (max-width:900px) {
+    .social{
+        display: none;
+    }
+    .social::after{
+        display: none;
+    }
+    .social-nav{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        height: 2.5rem;
+    }
+    .social-navbar{
+         display: flex;
+        gap: 2rem;
+    }
+    .social-navbar a{  
+    color: var(--b-color); 
+}
 }

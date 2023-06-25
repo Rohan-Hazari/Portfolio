@@ -339,16 +339,14 @@ li img{
         width: 100% !important; 
     }
     
-    .profile-img{
+    /* .profile-img{
         display: none;
-    }
+    } */
    
     .navbar{
 
         display: block;
-
         width: 100%;
-
         font-size: 0.8rem;
 
        
@@ -361,7 +359,6 @@ li img{
 
     .links{
         display: block;
-
         height: 0;
         overflow:hidden;
         transition: all 0.3s ease;
@@ -380,32 +377,25 @@ li img{
     .link{
         padding: 1rem ;
         margin: auto;
-
-
-
-
     }
 
     .logo{
         padding: 0.5rem 1rem;
-
         display: flex;
         justify-content: space-between;
-        
     }
+
     .name-logo{
         padding: 0;
         margin: 0 1rem;
         width: 35px;
     }
+
     .toggle-btn{
         margin-right: 1rem;
-
         display:block;
-
         font-size: 1.5rem;
         cursor: pointer;
-
         background-color: transparent;
         border-color: transparent;
     }
