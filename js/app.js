@@ -18,5 +18,5 @@ window.addEventListener("load", () => {
   setTimeout(() => {
     preloader.style.display = "none";
     body.style.display = "block";
-  }, 1500);
+  }, 150);
 });
