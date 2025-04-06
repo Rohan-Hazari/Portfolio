@@ -1,290 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="./images/favicon_io/favicon.ico"
-        type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon_io/favicon.ico"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/loading.css" />
+    <link rel="stylesheet" href="/css/about.css" />
+    <link rel="stylesheet" href="/css/button.css" />
+    <link rel="stylesheet" href="/css/skills.css" />
+    <link rel="stylesheet" href="/css/project.css" />
+    <link rel="stylesheet" href="/css/social.css" />
+  </head>
 
-    <link rel="stylesheet" href="/css/home.css">
-    <link rel="stylesheet" href="/css/loading.css">
-    <link rel="stylesheet" href="/css/about.css">
-    <link rel="stylesheet" href="/css/button.css">
-    <link rel="stylesheet" href="/css/skills.css">
-    <link rel="stylesheet" href="/css/project.css">
-    <link rel="stylesheet" href="/css/social.css">
-
-</head>
-
-<!-- Google tag (gtag.js) -->
-<script async
-    src="https://www.googletagmanager.com/gtag/js?id=G-6RR95PE91J"></script>
-<script>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-6RR95PE91J"
+  ></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-    gtag('config', 'G-6RR95PE91J');
-</script>
+    gtag("config", "G-6RR95PE91J");
+  </script>
 
-<section class="preloader">
+  <section class="preloader">
     <div class="lds-ripple">
-        <div></div>
-        <div></div>
+      <div></div>
+      <div></div>
     </div>
-</section>
+  </section>
 
-<body class="body">
-
-
-
+  <body class="body">
     <div class="sub-body">
-        <nav class="navbar">
-            <!-- <div class="header"> -->
-            <div class="logo">
-                <div class="resume-btn">
-                    <a target="_blank"
-                        href="/images/Rohan-Hazari-Resume.pdf">Resume</a>
-                </div>
-                <button class="toggle-btn">
-                    <div class="fas fa-bars"></div>
-                </button>
-            </div>
+      <nav class="navbar">
+        <!-- <div class="header"> -->
+        <div class="logo">
+          <div class="resume-btn">
+            <a target="_blank" href="/images/Rohan-Hazari-Resume.pdf">Resume</a>
+          </div>
+          <button class="toggle-btn">
+            <div class="fas fa-bars"></div>
+          </button>
+        </div>
 
-            <ul class="links">
-                <li><a class="link home" href="#home">Home</a></li>
-                <li><a class="link contact" href="#aboutmyself">About Me</a>
+        <ul class="links">
+          <li><a class="link home" href="#home">Home</a></li>
+          <li><a class="link contact" href="#aboutmyself">About Me</a></li>
+          <!-- <li><a class="link skills" href="#skill">Skills</a></li> -->
+          <li><a class="link project" href="#project">Projects</a></li>
+
+          <li class="social-nav">
+            <section class="social-navbar">
+              <a href="https://github.com/Rohan-Hazari"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+
+              <a href="https://twitter.com/rohanhzri"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+
+              <a href="https://www.linkedin.com/in/rohan-hazari-1a1199216/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </section>
+          </li>
+        </ul>
+        <!-- </div> -->
+      </nav>
+
+      <main>
+        <div class="container">
+          <section id="home">
+            <div class="home-box">
+              <h1>Hi, my Name is</h1>
+              <h2>Rohan Hazari</h2>
+              <p>
+                I'm a frontend heavy fullstack engineer just starting my career
+                exploring new things.
+              </p>
+              <p style="color: var(--primary-heading-color)">
+                Technologies I use
+              </p>
+              <ul class="skill-list">
+                <li><img src="/images/html.svg" alt="HTML icon" /> HTML</li>
+                <li><img src="/images/css.svg" alt="CSS icon" /> CSS</li>
+                <li>
+                  <img src="/images/javascript.svg" alt="Javascript icon" />
+                  Javascript
                 </li>
-                <!-- <li><a class="link skills" href="#skill">Skills</a></li> -->
-                <li><a class="link project" href="#project">Projects</a></li>
-
-                <li class="social-nav">
-                    <section class="social-navbar">
-                        <a href="https://github.com/Rohan-Hazari"><i
-                                class="fa-brands fa-github"></i></a>
-
-                        <a href="https://twitter.com/rohanhzri"><i
-                                class="fa-brands fa-twitter"></i></a>
-
-                        <a
-                            href="https://www.linkedin.com/in/rohan-hazari-1a1199216/"><i
-                                class="fa-brands fa-linkedin"></i></a>
-                    </section>
+                <li>
+                  <img src="/images/react.svg" alt="React icon" /> React.js
                 </li>
-
-
-
-            </ul>
-            <!-- </div> -->
-
-        </nav>
-
-
-
-        <main>
-            <div class="container">
-                <section id="home">
-                    <div class="home-box">
-                        <h1> Hi, my Name is </h1>
-                        <h2>Rohan Hazari</h2>
-                        <p> I'm a frontend heavy fullstack engineer just starting my career exploring new things and get into a niche I like.
-                            
-                        </p>
-                        <p style="color:var(--primary-heading-color)">
-                            Technologies I use
-                        </p>
-                        <ul class="skill-list">
-                            <li> <img src="/images/html.svg" alt="HTML icon">
-                                HTML</li>
-                            <li> <img src="/images/css.svg" alt="CSS icon"> CSS
-                            </li>
-                            <li><img src="/images/javascript.svg"
-                                    alt="Javascript icon">
-                                Javascript</li>
-                            <li><img src="/images/react.svg" alt="React icon">
-                                React.js</li>
-                            <li><img src="/images/icons8-mongodb-color/icons8-mongodb-30.png"
-                                    alt=""> MongoDB</li>
-                            <li><img src="/images/nodejs.svg" alt=""> Node.js
-                            </li>
-                            <li><img src="/images/icons8-express-js-office/icons8-express-js-30.svg"
-                                    alt=""> Express.js</li>
-                       
-
-                        </ul>
-
-
-                    </div>
-
-                </section>
-                <section id="aboutmyself">
-                    <div class="about-box">
-                        <h2>About Me</h2>
-
-                        <div class="description about-text">
-                            <p>My interest in Web development started when I
-                                was
-                                told to make a project in college at the end of
-                                2021
-                                and I instantly fell in love with it.
-                                I love doing CSS tricks and animation using
-                                Javascript.
-                            <p>
-                                Interested in AWS, Web Animations currently tinkering with wasm, framer motion and tensorflow.js
-                            </p>
-
-
-
-                        </div>
-                    </div>
-                    <div class="image profile-img">
-                        <div class="wrapper">
-                            <img src="/images/laptop.png" alt="Profile photo">
-                        </div>
-                    </div>
-
-
-                </section>
-
-
-
-                <!-- <section id="skill">
-                    <h2>Skills</h2>
-                    <div class="skill-box">
-                        <div class="language">
-                            <p>Programming Languages :</p>
-                            <div class="skill-icons">
-                                <img class="smg" src="/images/java.svg"
-                                    alt="Java">
-                                <img class="smg" src="/images/c.svg" alt="C">
-                                <img class="smg" src="/images/python.svg"
-                                    alt="python">
-                                <img class="smg" src="/images/html.svg"
-                                    alt="HTML">
-                                <img class="smg" src="/images/sass.svg"
-                                    alt="CSS/Sass">
-                                <img class="smg" src="/images/javascript.svg"
-                                    alt="Javascript">
-                            </div>
-                        </div>
-                        <div class="framework">
-                            <p>Librarie's and Framework :</p>
-                            <div class="skill-icons">
-                                <img class="smg" src="/images/react.svg"
-                                    alt="React.js">
-                                <img class="smg" src="/images/nodejs.svg"
-                                    alt="node.js">
-                                <img class="smg" src="/images/express.svg"
-                                    alt="express.js">
-
-                            </div>
-                        </div>
-                    </div>
-                </section> -->
-
-
-                <section id="project">
-                    <div class="project-box">
-                        <h2>Project</h2>
-                        <div class="project-content">
-                            <a href="https://rohan-travel-advisor-2023.netlify.app/"
-                                class="project-card card">
-                                <div class="card-img">
-                                    <img src="../images/Travel_advisor.png"
-                                        alt="project-image">
-                                </div>
-                                <div class="card-text">
-                                    <ul class="tags">
-                                        <li>React</li>
-                                        <li>Material UI</li>
-                                    </ul>
-                                    <p>A Travel Advisor website to look for
-                                        various restaurants,hotels and
-                                        attraction</p>
-                                </div>
-                            </a>
-                            <a href="https://comfy-sloth-706e37.netlify.app/"
-                                class="project-card card">
-                                <div class="card-img">
-                                    <img src="../images/Comfysloth.png"
-                                        alt="project-image">
-                                </div>
-                                <div class="card-text">
-                                    <ul class="tags">
-                                        <li>React</li>
-                                        <li>Auth0</li>
-                                        <li>Styled Components</li>
-                                        <li>StripeAPI</li>
-                                    </ul>
-                                    <p>A E-commerce website made with Auth0 and
-                                        StripeAPI
-                                    </p>
-                                </div>
-                            </a>
-                            <a href="https://rauh-course-2022.netlify.app/"
-                                class="project-card card">
-                                <div class="card-img">
-                                    <img src="../images/Corsira.png"
-                                        alt="project-image">
-                                </div>
-                                <div class="card-text">
-                                    <ul class="tags">
-                                        <li>HTML</li>
-                                        <li>CSS</li>
-                                        <li>Javascript</li>
-                                    </ul>
-                                    <p>A static responsive website with smooth
-                                        loading
-                                        animation and a fully functional contact
-                                        form</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="contact">
-                    <div class="contact-box">
-
-                    </div>
-                </section>
+                <li>
+                  <img
+                    src="/images/icons8-mongodb-color/icons8-mongodb-30.png"
+                    alt="MongoDB Icon"
+                  />
+                  MongoDB
+                </li>
+                <li>
+                  <img src="/images/nodejs.svg" alt="Node.js Icon" /> Node.js
+                </li>
+                <li>
+                  <img
+                    src="/images/icons8-express-js-office/icons8-express-js-30.svg"
+                    alt="Express.js Icon"
+                  />
+                  Express.js
+                </li>
+                <li>
+                  <img
+                    src="/images/postgresql-icon.svg"
+                    alt="PostGreSQL Icon"
+                  />
+                  PostGreSQL
+                </li>
+                <li>
+                  <img src="/images/nextjs-icon.svg" alt="Next.js Icon" />
+                  Next.js
+                </li>
+              </ul>
             </div>
-        </main>
+          </section>
+          <section id="project">
+            <div class="project-box">
+              <h2>Projects</h2>
+              <div class="project-content">
+                <a
+                  href="https://rohan-travel-advisor-2023.netlify.app/"
+                  class="project-card card"
+                >
+                  <div class="card-img">
+                    <img
+                      loading="lazy"
+                      src="../images/Travel_advisor.png"
+                      alt="project-image"
+                    />
+                  </div>
+                  <div class="card-text">
+                    <ul class="tags">
+                      <li>React</li>
+                      <li>Material UI</li>
+                    </ul>
+                    <p>
+                      A Travel Advisor website to look for various
+                      restaurants,hotels and attraction
+                    </p>
+                  </div>
+                </a>
+                <a
+                  href="https://comfy-sloth-706e37.netlify.app/"
+                  class="project-card card"
+                >
+                  <div class="card-img">
+                    <img
+                      loading="lazy"
+                      src="../images/Comfysloth.png"
+                      alt="project-image"
+                    />
+                  </div>
+                  <div class="card-text">
+                    <ul class="tags">
+                      <li>React</li>
+                      <li>Auth0</li>
+                      <li>Styled Components</li>
+                      <li>StripeAPI</li>
+                    </ul>
+                    <p>A E-commerce website made with Auth0 and StripeAPI</p>
+                  </div>
+                </a>
+                <a
+                  href="https://chessmates-pr.vercel.app/"
+                  class="project-card card"
+                >
+                  <div class="card-img">
+                    <img
+                      loading="lazy"
+                      src="/images//Chessmate.png"
+                      alt="project-image"
+                    />
+                  </div>
+                  <div class="card-text">
+                    <ul class="tags">
+                      <li>Next.js</li>
+                      <li>Tailwind</li>
+                      <li>ShadCN</li>
+                      <li>TanStack Query</li>
+                    </ul>
+                    <p>
+                      ChessMates is a comprehensive social media platform
+                      tailored for chess enthusiasts
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
 
-        <section class="social">
-            <a href="https://github.com/Rohan-Hazari"><i
-                    class="fa-brands fa-github"></i></a>
+          <section id="aboutmyself">
+            <div class="about-box">
+              <h2>About Me</h2>
 
-            <a href="https://twitter.com/rohanhzri"><i
-                    class="fa-brands fa-twitter"></i></a>
+              <div class="description about-text">
+                <p>
+                  My interest in Web development started when I was told to make
+                  a project in college at the end of 2021 and I instantly fell
+                  in love with it. I love doing CSS tricks and animation using
+                  Javascript.
+                </p>
 
-            <a href="https://www.linkedin.com/in/rohan-hazari-1a1199216/"><i
-                    class="fa-brands fa-linkedin"></i></a>
-        </section>
+                <p>
+                  Interested in AWS, Web Animations currently tinkering with
+                  wasm, framer motion and tensorflow.js
+                </p>
+              </div>
+            </div>
+            <div class="image profile-img">
+              <div class="wrapper">
+                <img src="/images/laptop.png" alt="Profile photo" />
+              </div>
+            </div>
+          </section>
 
+          <section id="contact">
+            <div class="contact-box"></div>
+          </section>
+        </div>
+      </main>
 
+      <section class="social">
+        <a href="https://github.com/Rohan-Hazari"
+          ><i class="fa-brands fa-github"></i
+        ></a>
 
+        <a href="https://twitter.com/rohanhzri"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
 
-        <script>
+        <a href="https://www.linkedin.com/in/rohan-hazari-1a1199216/"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </section>
 
-        </script>
+      <script></script>
 
-        <script src="/js/app.js"></script>
-
+      <script src="/js/app.js"></script>
     </div>
-
-</body>
-
+  </body>
 </html>
