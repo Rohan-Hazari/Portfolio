@@ -1,49 +1,66 @@
-.social{
-    position:fixed;
-    left: 3rem;
-    bottom: 6rem;
-    font-size: 1.75rem;
+/* FOOTER */
+footer {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
     display: flex;
-    flex-direction: column;
-    
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     gap: 1rem;
+    border-top: 1px solid var(--border);
+}
 
+.footer-name {
+    font-family: var(--serif);
+    font-size: 1rem;
+    color: var(--ink);
 }
-.social-nav{
-    display: none;
-}
-.social a{
-    color: var(--b-color);
 
+.footer-copy {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    color: var(--ink-3);
 }
-.social::after{
-    content: ' ';
+
+.social-links { display: flex; gap: 1rem; }
+
+.social-links a {
+    color: var(--ink-3);
+    font-size: 1rem;
+    transition: color 0.2s, transform 0.2s;
+    text-decoration: none;
+}
+
+.social-links a:hover { color: var(--accent); transform: translateY(-2px); }
+
+/* FIXED SOCIAL */
+.side-social {
     position: fixed;
-    left:3.8rem;
-    bottom: 0;
-    width: 1px;
-    height: 13.5%;
-    background: linear-gradient(180deg,var(--b-color) ,transparent 100%);
+    bottom: 2rem; right: 2rem;
+    display: flex; flex-direction: column; gap: 0.75rem;
+    z-index: 50;
 }
 
-@media screen and (max-width:900px) {
-    .social{
-        display: none;
-    }
-    .social::after{
-        display: none;
-    }
-    .social-nav{
-        display: flex;
-        align-items: center;
-        gap: 2rem;
-        height: 2.5rem;
-    }
-    .social-navbar{
-         display: flex;
-        gap: 2rem;
-    }
-    .social-navbar a{  
-    color: var(--b-color); 
+.side-social a {
+    width: 36px; height: 36px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--ink-3);
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: border-color 0.2s, color 0.2s, transform 0.2s, background 0.2s;
 }
+
+.side-social a:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .side-social { display: none; }
+    footer { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
 }

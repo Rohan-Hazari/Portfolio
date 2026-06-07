@@ -1,275 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link
-      rel="shortcut icon"
-      href="./images/favicon_io/favicon.ico"
-      type="image/x-icon"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="shortcut icon" href="./images/favicon_io/favicon.ico" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rohan Hazari — Software Engineer</title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-    />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <link rel="stylesheet" href="/css/home.css" />
+  <link rel="stylesheet" href="/css/experience.css" />
+  <link rel="stylesheet" href="/css/project.css" />
+  <link rel="stylesheet" href="/css/about.css" />
+  <link rel="stylesheet" href="/css/skills.css" />
+  <link rel="stylesheet" href="/css/social.css" />
+</head>
 
-    <link rel="stylesheet" href="/css/home.css" />
-    <link rel="stylesheet" href="/css/loading.css" />
-    <link rel="stylesheet" href="/css/about.css" />
-    <link rel="stylesheet" href="/css/button.css" />
-    <link rel="stylesheet" href="/css/skills.css" />
-    <link rel="stylesheet" href="/css/project.css" />
-    <link rel="stylesheet" href="/css/social.css" />
-  </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6RR95PE91J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag("js", new Date());
+  gtag("config", "G-6RR95PE91J");
+</script>
 
-  <!-- Google tag (gtag.js) -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-6RR95PE91J"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
+<body>
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">Rohan Hazari</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-palette"></i>
+          <span>Theme</span>
+        </button>
+      </li>
+      <li><a href="https://drive.google.com/drive/folders/1vxb8P_i3f2tY6iUoZTL6MAQcF6ZLLoPX?usp=sharing" target="_blank" class="nav-resume">Resume ↗</a></li>
+    </ul>
+  </nav>
 
-    gtag("config", "G-6RR95PE91J");
-  </script>
+  <div class="page">
 
-  <section class="preloader">
-    <div class="lds-ripple">
-      <div></div>
-      <div></div>
-    </div>
-  </section>
+    <!-- HERO -->
+    <section id="hero">
+      <p class="hero-eyebrow">Software Development Engineer</p>
+      <h1 class="hero-name">Rohan<br>Hazari</h1>
+      <p class="hero-sub">
+        Backend engineer building <em>distributed systems</em> and <em>high-throughput data pipelines</em> at scale — currently at Byteridge, solving enterprise-grade problems in fintech infrastructure.
+      </p>
+      <div class="hero-links">
+        <a href="#experience" class="btn-primary">View my work</a>
+        <a href="mailto:rohanhzri@gmail.com" class="btn-ghost">Get in touch</a>
+      </div>
+    </section>
 
-  <body class="body">
-    <div class="sub-body">
-      <nav class="navbar">
-        <!-- <div class="header"> -->
-        <div class="logo">
-          <div class="resume-btn">
-            <a target="_blank" href="/images/Rohan-Hazari-Resume.pdf">Resume</a>
+    <hr class="divider" />
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <p class="section-label reveal">Work</p>
+      <h2 class="section-title reveal">Experience</h2>
+
+      <div class="exp-list">
+
+        <div class="exp-item reveal">
+          <div class="exp-header">
+            <div>
+              <div class="exp-title">Software Development Engineer I</div>
+              <div class="exp-title" style="font-weight:400; font-size:0.95rem; margin-top:0.15rem;">
+                <span class="exp-company">Byteridge</span> · Remote
+              </div>
+            </div>
+            <div class="exp-meta">Jul 2024 — Present</div>
           </div>
-          <button class="toggle-btn">
-            <div class="fas fa-bars"></div>
-          </button>
+          <span class="exp-tag">Full-time</span>
+
+          <p style="font-size:0.88rem; color:var(--ink-2); margin-bottom:0.5rem;">
+            Core engineer on an enterprise loan collection platform — building distributed data pipelines and audit frameworks that process tens of millions of sensitive financial records.
+          </p>
+
+          <div class="exp-subhead">Backend Systems</div>
+          <ul class="exp-bullets">
+            <li>Architected a distributed import processing queue using <strong>Redis</strong> and <strong>SQL</strong> to throttle concurrent file uploads — eliminated OOM Kubernetes pod crashes by decoupling ingestion workflows.</li>
+            <li>Engineered a high-throughput Data Reconciliation Service auditing up to <strong>76M+ data points per run</strong> (200k rows × 380 columns) with automatic resolution of complex derived and cross-account linked changes.</li>
+          </ul>
+
+          <div class="exp-subhead">Performance Optimization</div>
+          <ul class="exp-bullets">
+            <li>Slashed critical API latencies from <strong>180-second timeouts to sub-second</strong> responses by refactoring non-SARGable queries, optimizing execution plans, and replacing eager loading with data streaming.</li>
+            <li>Cut service memory footprints from <strong>1 GB to 700 MB</strong> and reduced CPU overhead by rewriting inefficient legacy code in .NET Core and Entity Framework.</li>
+          </ul>
+
+          <div class="exp-subhead">Internal Tooling & Frontend</div>
+          <ul class="exp-bullets">
+            <li>Pitched and built an <strong>AI-driven log analysis tool</strong> after proposing it to senior leadership — reduced debugging time from hours to minutes by automating parsing of 20M App Insights logs.</li>
+            <li>Building modular, reusable component libraries optimized for complex state transitions using <strong>Next.js</strong>, <strong>TypeScript</strong>, and <strong>Redux</strong>.</li>
+          </ul>
         </div>
 
-        <ul class="links">
-          <li><a class="link home" href="#home">Home</a></li>
-          <li><a class="link contact" href="#aboutmyself">About Me</a></li>
-          <!-- <li><a class="link skills" href="#skill">Skills</a></li> -->
-          <li><a class="link project" href="#project">Projects</a></li>
-
-          <li class="social-nav">
-            <section class="social-navbar">
-              <a href="https://github.com/Rohan-Hazari"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-
-              <a href="https://twitter.com/rohanhzri"
-                ><i class="fa-brands fa-twitter"></i
-              ></a>
-
-              <a href="https://www.linkedin.com/in/rohan-hazari-1a1199216/"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-            </section>
-          </li>
-        </ul>
-        <!-- </div> -->
-      </nav>
-
-      <main>
-        <div class="container">
-          <section id="home">
-            <div class="home-box">
-              <h1>Hi, my Name is</h1>
-              <h2>Rohan Hazari</h2>
-              <p>
-                I'm a frontend heavy fullstack engineer just starting my career
-                exploring new things.
-              </p>
-              <p style="color: var(--primary-heading-color)">
-                Technologies I use
-              </p>
-              <ul class="skill-list">
-                <li><img src="/images/html.svg" alt="HTML icon" /> HTML</li>
-                <li><img src="/images/css.svg" alt="CSS icon" /> CSS</li>
-                <li>
-                  <img src="/images/javascript.svg" alt="Javascript icon" />
-                  Javascript
-                </li>
-                <li>
-                  <img src="/images/react.svg" alt="React icon" /> React.js
-                </li>
-                <li>
-                  <img
-                    src="/images/icons8-mongodb-color/icons8-mongodb-30.png"
-                    alt="MongoDB Icon"
-                  />
-                  MongoDB
-                </li>
-                <li>
-                  <img src="/images/nodejs.svg" alt="Node.js Icon" /> Node.js
-                </li>
-                <li>
-                  <img
-                    src="/images/icons8-express-js-office/icons8-express-js-30.svg"
-                    alt="Express.js Icon"
-                  />
-                  Express.js
-                </li>
-                <li>
-                  <img
-                    src="/images/postgresql-icon.svg"
-                    alt="PostGreSQL Icon"
-                  />
-                  PostGreSQL
-                </li>
-                <li>
-                  <img src="/images/nextjs-icon.svg" alt="Next.js Icon" />
-                  Next.js
-                </li>
-              </ul>
-            </div>
-          </section>
-          <section id="project">
-            <div class="project-box">
-              <h2>Projects</h2>
-              <div class="project-content">
-                <a
-                  href="https://rohan-travel-advisor-2023.netlify.app/"
-                  class="project-card card"
-                >
-                  <div class="card-img">
-                    <img
-                      loading="lazy"
-                      src="../images/Travel_advisor.png"
-                      alt="project-image"
-                    />
-                  </div>
-                  <div class="card-text">
-                    <ul class="tags">
-                      <li>React</li>
-                      <li>Material UI</li>
-                    </ul>
-                    <p>
-                      A Travel Advisor website to look for various
-                      restaurants,hotels and attraction
-                    </p>
-                  </div>
-                </a>
-                <a
-                  href="https://comfy-sloth-706e37.netlify.app/"
-                  class="project-card card"
-                >
-                  <div class="card-img">
-                    <img
-                      loading="lazy"
-                      src="../images/Comfysloth.png"
-                      alt="project-image"
-                    />
-                  </div>
-                  <div class="card-text">
-                    <ul class="tags">
-                      <li>React</li>
-                      <li>Auth0</li>
-                      <li>Styled Components</li>
-                      <li>StripeAPI</li>
-                    </ul>
-                    <p>A E-commerce website made with Auth0 and StripeAPI</p>
-                  </div>
-                </a>
-                <a
-                  href="https://chessmates-pr.vercel.app/"
-                  class="project-card card"
-                >
-                  <div class="card-img">
-                    <img
-                      loading="lazy"
-                      src="/images//Chessmate.png"
-                      alt="project-image"
-                    />
-                  </div>
-                  <div class="card-text">
-                    <ul class="tags">
-                      <li>Next.js</li>
-                      <li>Tailwind</li>
-                      <li>ShadCN</li>
-                      <li>TanStack Query</li>
-                    </ul>
-                    <p>
-                      ChessMates is a comprehensive social media platform
-                      tailored for chess enthusiasts
-                    </p>
-                  </div>
-                </a>
+        <div class="exp-item reveal">
+          <div class="exp-header">
+            <div>
+              <div class="exp-title">Software Development Engineer — Intern</div>
+              <div class="exp-title" style="font-weight:400; font-size:0.95rem; margin-top:0.15rem;">
+                <span class="exp-company">Byteridge</span> · Remote
               </div>
             </div>
-          </section>
-
-          <section id="aboutmyself">
-            <div class="about-box">
-              <h2>About Me</h2>
-
-              <div class="description about-text">
-                <p>
-                  My interest in Web development started when I was told to make
-                  a project in college at the end of 2021 and I instantly fell
-                  in love with it. I love doing CSS tricks and animation using
-                  Javascript.
-                </p>
-
-                <p>
-                  Interested in AWS, Web Animations currently tinkering with
-                  wasm, framer motion and tensorflow.js
-                </p>
-              </div>
-            </div>
-            <div class="image profile-img">
-              <div class="wrapper">
-                <img src="/images/laptop.png" alt="Profile photo" />
-              </div>
-            </div>
-          </section>
-
-          <section id="contact">
-            <div class="contact-box"></div>
-          </section>
+            <div class="exp-meta">Aug 2023 — Oct 2023</div>
+          </div>
+          <span class="exp-tag">Internship</span>
+          <ul class="exp-bullets">
+            <li>Achieved <strong>90% backend code coverage</strong> by engineering 150+ automated unit tests using Chai and Mocha; integrated SonarQube for continuous code quality analysis.</li>
+            <li>Developed API methods with Prisma Client + PostgreSQL on Node.js/Express.js and authored API documentation in Swagger.</li>
+          </ul>
         </div>
-      </main>
 
-      <section class="social">
-        <a href="https://github.com/Rohan-Hazari"
-          ><i class="fa-brands fa-github"></i
-        ></a>
+      </div>
+    </section>
 
-        <a href="https://twitter.com/rohanhzri"
-          ><i class="fa-brands fa-twitter"></i
-        ></a>
+    <hr class="divider" />
 
-        <a href="https://www.linkedin.com/in/rohan-hazari-1a1199216/"
-          ><i class="fa-brands fa-linkedin"></i
-        ></a>
-      </section>
+    <!-- PROJECTS -->
+    <section id="projects">
+      <p class="section-label reveal">Work</p>
+      <h2 class="section-title reveal">Projects</h2>
 
-      <script></script>
+      <div class="project-grid">
 
-      <script src="/js/app.js"></script>
+        <a class="project-card reveal" href="https://chessmates-pr.vercel.app/" target="_blank" rel="noopener">
+          <div class="project-image">
+            <img loading="lazy" src="/images/Chessmate.png" alt="ChessMates project preview" />
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-icon">
+                <i class="fa-solid fa-chess"></i>
+                <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:0.8rem;"></i>
+            </div>
+            <div class="project-name">ChessMates</div>
+            <p class="project-desc">A comprehensive social media platform for chess enthusiasts with real-time features, authentication, and Redis caching for optimal performance.</p>
+            <div class="project-tags">
+                <span class="tag">Next.js</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">ShadCN</span>
+                <span class="tag">TanStack Query</span>
+                <span class="tag">Auth.js</span>
+                <span class="tag">Redis</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="project-card reveal" href="https://comfy-sloth-706e37.netlify.app/" target="_blank" rel="noopener">
+          <div class="project-image">
+            <img loading="lazy" src="/images/Comfysloth.png" alt="ComfySloth project preview" />
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-icon">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:0.8rem;"></i>
+            </div>
+            <div class="project-name">ComfySloth</div>
+            <p class="project-desc">A full-featured e-commerce platform with Auth0 authentication, Stripe payment integration, and styled components for a seamless shopping experience.</p>
+            <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">Auth0</span>
+                <span class="tag">Stripe API</span>
+                <span class="tag">Styled Components</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="project-card reveal" href="https://rohan-travel-advisor-2023.netlify.app/" target="_blank" rel="noopener">
+          <div class="project-image">
+            <img loading="lazy" src="/images/Travel_advisor.png" alt="Travel Advisor project preview" />
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-icon">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:0.8rem;"></i>
+            </div>
+            <div class="project-name">Travel Advisor</div>
+            <p class="project-desc">A travel discovery app for finding restaurants, hotels, and attractions with location-based search and interactive map integration.</p>
+            <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">Material UI</span>
+                <span class="tag">Google Maps API</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ABOUT -->
+    <section id="about">
+      <p class="section-label reveal">Me</p>
+      <h2 class="section-title reveal">About</h2>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I'm a software engineer based in <em>Mumbai, India</em> — currently at Byteridge where I focus on backend infrastructure for enterprise fintech products.</p>
+          <p>I got into web development in late 2021 through a college project and haven't looked back since. I'm drawn to the intersection of <em>performance engineering</em> and <em>clean abstractions</em> — making systems fast, resilient, and maintainable.</p>
+          <p>Outside pure backend work, I build modular frontend component libraries and enjoy tinkering with AI tooling. Recently, I proposed and shipped an internal AI-powered log analysis tool that transformed how the team debugs production issues.</p>
+          <p>I graduated with a <em>CGPA of 9.78</em> in B.Tech Computer Science from Vidyalankar Institute of Technology (2020–2024).</p>
+        </div>
+
+        <div class="skills-block reveal">
+          <div class="skill-group">
+            <div class="skill-group-label">Frontend</div>
+            <div class="skill-chips">
+              <span class="chip">Next.js</span>
+              <span class="chip">React</span>
+              <span class="chip">TypeScript</span>
+              <span class="chip">Redux</span>
+              <span class="chip">Tailwind</span>
+              <span class="chip">TanStack Query</span>
+              <span class="chip">Material UI</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-group-label">Backend</div>
+            <div class="skill-chips">
+              <span class="chip">Node.js</span>
+              <span class="chip">Express.js</span>
+              <span class="chip">.NET Core</span>
+              <span class="chip">Entity Framework</span>
+              <span class="chip">Prisma</span>
+              <span class="chip">Redis</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-group-label">Databases</div>
+            <div class="skill-chips">
+              <span class="chip">MSSQL</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">MongoDB</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-group-label">Languages</div>
+            <div class="skill-chips">
+              <span class="chip">TypeScript</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">C#</span>
+              <span class="chip">SQL</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-group-label">DevOps & Cloud</div>
+            <div class="skill-chips">
+              <span class="chip">Docker</span>
+              <span class="chip">AWS</span>
+              <span class="chip">Kubernetes</span>
+              <span class="chip">SonarQube</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div>
+      <div class="footer-name">Rohan Hazari</div>
+      <div class="footer-copy" style="margin-top:0.3rem;">rohanhzri@gmail.com · Mumbai, India</div>
     </div>
-  </body>
+    <div class="social-links">
+      <a href="https://github.com/Rohan-Hazari" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/rohan-hazari-1a1199216/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://twitter.com/rohanhzri" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
+  </footer>
+
+  <!-- FIXED SOCIAL -->
+  <div class="side-social">
+    <a href="https://github.com/Rohan-Hazari" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/rohan-hazari-1a1199216/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="mailto:rohanhzri@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+  </div>
+
+  <script src="/js/app.js"></script>
+</body>
 </html>
