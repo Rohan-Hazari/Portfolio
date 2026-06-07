@@ -1,299 +1,456 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="shortcut icon" href="./images/favicon_io/favicon.ico" type="image/x-icon" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rohan Hazari — Software Engineer</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon_io/favicon.ico"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rohan Hazari — Software Engineer</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="/css/home.css" />
-  <link rel="stylesheet" href="/css/experience.css" />
-  <link rel="stylesheet" href="/css/project.css" />
-  <link rel="stylesheet" href="/css/about.css" />
-  <link rel="stylesheet" href="/css/skills.css" />
-  <link rel="stylesheet" href="/css/social.css" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6RR95PE91J"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag("js", new Date());
-  gtag("config", "G-6RR95PE91J");
-</script>
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/experience.css" />
+    <link rel="stylesheet" href="/css/project.css" />
+    <link rel="stylesheet" href="/css/about.css" />
+    <link rel="stylesheet" href="/css/skills.css" />
+    <link rel="stylesheet" href="/css/social.css" />
+  </head>
 
-<body>
-  <!-- NAV -->
-  <nav id="navbar">
-    <a href="#hero" class="nav-logo">Rohan Hazari</a>
-    <button class="hamburger" id="hamburger" aria-label="Menu">
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-6RR95PE91J"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-6RR95PE91J");
+  </script>
+
+  <body>
+    <div class="bg-waves">
+      <svg viewBox="0 0 900 600" preserveAspectRatio="xMaxYMid slice">
+        <rect x="0" y="0" width="900" height="600"></rect>
+        <path
+          d="M568 600L569.7 585.7C571.3 571.3 574.7 542.7 570.2 514.2C565.7 485.7 553.3 457.3 545.7 428.8C538 400.3 535 371.7 542.8 343C550.7 314.3 569.3 285.7 574.8 257C580.3 228.3 572.7 199.7 570.7 171.2C568.7 142.7 572.3 114.3 579 85.8C585.7 57.3 595.3 28.7 600.2 14.3L605 0L900 0L900 14.3C900 28.7 900 57.3 900 85.8C900 114.3 900 142.7 900 171.2C900 199.7 900 228.3 900 257C900 285.7 900 314.3 900 343C900 371.7 900 400.3 900 428.8C900 457.3 900 485.7 900 514.2C900 542.7 900 571.3 900 585.7L900 600Z"
+        ></path>
+        <path
+          d="M589 600L600.5 585.7C612 571.3 635 542.7 647.5 514.2C660 485.7 662 457.3 665 428.8C668 400.3 672 371.7 670 343C668 314.3 660 285.7 653 257C646 228.3 640 199.7 638.7 171.2C637.3 142.7 640.7 114.3 632.8 85.8C625 57.3 606 28.7 596.5 14.3L587 0L900 0L900 14.3C900 28.7 900 57.3 900 85.8C900 114.3 900 142.7 900 171.2C900 199.7 900 228.3 900 257C900 285.7 900 314.3 900 343C900 371.7 900 400.3 900 428.8C900 457.3 900 485.7 900 514.2C900 542.7 900 571.3 900 585.7L900 600Z"
+        ></path>
+        <path
+          d="M656 600L664.7 585.7C673.3 571.3 690.7 542.7 697 514.2C703.3 485.7 698.7 457.3 691.5 428.8C684.3 400.3 674.7 371.7 671 343C667.3 314.3 669.7 285.7 673.3 257C677 228.3 682 199.7 690.3 171.2C698.7 142.7 710.3 114.3 712 85.8C713.7 57.3 705.3 28.7 701.2 14.3L697 0L900 0L900 14.3C900 28.7 900 57.3 900 85.8C900 114.3 900 142.7 900 171.2C900 199.7 900 228.3 900 257C900 285.7 900 314.3 900 343C900 371.7 900 400.3 900 428.8C900 457.3 900 485.7 900 514.2C900 542.7 900 571.3 900 585.7L900 600Z"
+        ></path>
+        <path
+          d="M739 600L735.3 585.7C731.7 571.3 724.3 542.7 724.7 514.2C725 485.7 733 457.3 734 428.8C735 400.3 729 371.7 731.3 343C733.7 314.3 744.3 285.7 752 257C759.7 228.3 764.3 199.7 766.8 171.2C769.3 142.7 769.7 114.3 759.8 85.8C750 57.3 730 28.7 720 14.3L710 0L900 0L900 14.3C900 28.7 900 57.3 900 85.8C900 114.3 900 142.7 900 171.2C900 199.7 900 228.3 900 257C900 285.7 900 314.3 900 343C900 371.7 900 400.3 900 428.8C900 457.3 900 485.7 900 514.2C900 542.7 900 571.3 900 585.7L900 600Z"
+        ></path>
+        <path
+          d="M815 600L805 585.7C795 571.3 775 542.7 771.5 514.2C768 485.7 781 457.3 788.5 428.8C796 400.3 798 371.7 797 343C796 314.3 792 285.7 789.7 257C787.3 228.3 786.7 199.7 781.5 171.2C776.3 142.7 766.7 114.3 763.8 85.8C761 57.3 765 28.7 767 14.3L769 0L900 0L900 14.3C900 28.7 900 57.3 900 85.8C900 114.3 900 142.7 900 171.2C900 199.7 900 228.3 900 257C900 285.7 900 314.3 900 343C900 371.7 900 400.3 900 428.8C900 457.3 900 485.7 900 514.2C900 542.7 900 571.3 900 585.7L900 600Z"
+        ></path>
+        <path
+          d="M846 600L841.7 585.7C837.3 571.3 828.7 542.7 825.2 514.2C821.7 485.7 823.3 457.3 828.8 428.8C834.3 400.3 843.7 371.7 849 343C854.3 314.3 855.7 285.7 855.2 257C854.7 228.3 852.3 199.7 847.3 171.2C842.3 142.7 834.7 114.3 836.5 85.8C838.3 57.3 849.7 28.7 855.3 14.3L861 0L900 0L900 14.3C900 28.7 900 57.3 900 85.8C900 114.3 900 142.7 900 171.2C900 199.7 900 228.3 900 257C900 285.7 900 314.3 900 343C900 371.7 900 400.3 900 428.8C900 457.3 900 485.7 900 514.2C900 542.7 900 571.3 900 585.7L900 600Z"
+        ></path>
+      </svg>
+    </div>
+    <!-- NAV -->
+    <nav id="navbar">
+      <a href="#hero" class="nav-logo">Rohan Hazari</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
         <i class="fa-solid fa-bars"></i>
-    </button>
-    <ul class="nav-links" id="nav-links">
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#about">About</a></li>
-      <li>
-        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
-          <i class="fa-solid fa-palette"></i>
-          <span>Theme</span>
-        </button>
-      </li>
-      <li><a href="https://drive.google.com/drive/folders/1vxb8P_i3f2tY6iUoZTL6MAQcF6ZLLoPX?usp=sharing" target="_blank" class="nav-resume">Resume ↗</a></li>
-    </ul>
-  </nav>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li>
+          <button
+            id="theme-toggle"
+            class="theme-toggle"
+            aria-label="Toggle theme"
+          >
+            <i class="fa-solid fa-palette"></i>
+            <span>Theme</span>
+          </button>
+        </li>
+        <li>
+          <a
+            href="https://drive.google.com/drive/folders/1vxb8P_i3f2tY6iUoZTL6MAQcF6ZLLoPX?usp=sharing"
+            target="_blank"
+            class="nav-resume"
+            >Resume ↗</a
+          >
+        </li>
+      </ul>
+    </nav>
 
-  <div class="page">
-
-    <!-- HERO -->
-    <section id="hero">
-      <p class="hero-eyebrow">Software Development Engineer</p>
-      <h1 class="hero-name">Rohan<br>Hazari</h1>
-      <p class="hero-sub">
-        Backend engineer building <em>distributed systems</em> and <em>high-throughput data pipelines</em> at scale — currently at Byteridge, solving enterprise-grade problems in fintech infrastructure.
-      </p>
-      <div class="hero-links">
-        <a href="#experience" class="btn-primary">View my work</a>
-        <a href="mailto:rohanhzri@gmail.com" class="btn-ghost">Get in touch</a>
-      </div>
-    </section>
-
-    <hr class="divider" />
-
-    <!-- EXPERIENCE -->
-    <section id="experience">
-      <p class="section-label reveal">Work</p>
-      <h2 class="section-title reveal">Experience</h2>
-
-      <div class="exp-list">
-
-        <div class="exp-item reveal">
-          <div class="exp-header">
-            <div>
-              <div class="exp-title">Software Development Engineer I</div>
-              <div class="exp-title" style="font-weight:400; font-size:0.95rem; margin-top:0.15rem;">
-                <span class="exp-company">Byteridge</span> · Remote
-              </div>
-            </div>
-            <div class="exp-meta">Jul 2024 — Present</div>
-          </div>
-          <span class="exp-tag">Full-time</span>
-
-          <p style="font-size:0.88rem; color:var(--ink-2); margin-bottom:0.5rem;">
-            Core engineer on an enterprise loan collection platform — building distributed data pipelines and audit frameworks that process tens of millions of sensitive financial records.
-          </p>
-
-          <div class="exp-subhead">Backend Systems</div>
-          <ul class="exp-bullets">
-            <li>Architected a distributed import processing queue using <strong>Redis</strong> and <strong>SQL</strong> to throttle concurrent file uploads — eliminated OOM Kubernetes pod crashes by decoupling ingestion workflows.</li>
-            <li>Engineered a high-throughput Data Reconciliation Service auditing up to <strong>76M+ data points per run</strong> (200k rows × 380 columns) with automatic resolution of complex derived and cross-account linked changes.</li>
-          </ul>
-
-          <div class="exp-subhead">Performance Optimization</div>
-          <ul class="exp-bullets">
-            <li>Slashed critical API latencies from <strong>180-second timeouts to sub-second</strong> responses by refactoring non-SARGable queries, optimizing execution plans, and replacing eager loading with data streaming.</li>
-            <li>Cut service memory footprints from <strong>1 GB to 700 MB</strong> and reduced CPU overhead by rewriting inefficient legacy code in .NET Core and Entity Framework.</li>
-          </ul>
-
-          <div class="exp-subhead">Internal Tooling & Frontend</div>
-          <ul class="exp-bullets">
-            <li>Pitched and built an <strong>AI-driven log analysis tool</strong> after proposing it to senior leadership — reduced debugging time from hours to minutes by automating parsing of 20M App Insights logs.</li>
-            <li>Building modular, reusable component libraries optimized for complex state transitions using <strong>Next.js</strong>, <strong>TypeScript</strong>, and <strong>Redux</strong>.</li>
-          </ul>
+    <div class="page">
+      <!-- HERO -->
+      <section id="hero">
+        <p class="hero-eyebrow">Software Development Engineer</p>
+        <h1 class="hero-name">Rohan<br />Hazari</h1>
+        <p class="hero-sub">
+          Backend engineer building <em>distributed systems</em> and
+          <em>high-throughput data pipelines</em> at scale currently at
+          Byteridge, solving enterprise-grade problems in fintech
+          infrastructure.
+        </p>
+        <div class="hero-links">
+          <a href="#experience" class="btn-primary">View my work</a>
+          <a href="mailto:rohanhzri@gmail.com" class="btn-ghost"
+            >Get in touch</a
+          >
         </div>
+      </section>
 
-        <div class="exp-item reveal">
-          <div class="exp-header">
-            <div>
-              <div class="exp-title">Software Development Engineer — Intern</div>
-              <div class="exp-title" style="font-weight:400; font-size:0.95rem; margin-top:0.15rem;">
-                <span class="exp-company">Byteridge</span> · Remote
+      <hr class="divider" />
+
+      <!-- EXPERIENCE -->
+      <section id="experience">
+        <p class="section-label reveal">Work</p>
+        <h2 class="section-title reveal">Experience</h2>
+
+        <div class="exp-list">
+          <div class="exp-item reveal">
+            <div class="exp-header">
+              <div>
+                <div class="exp-title">Software Development Engineer I</div>
+                <div
+                  class="exp-title"
+                  style="font-weight: 400; margin-top: 0.15rem;"
+                >
+                  <span class="exp-company">Byteridge</span> · Remote
+                </div>
               </div>
+              <div class="exp-meta">Jul 2024 — Present</div>
             </div>
-            <div class="exp-meta">Aug 2023 — Oct 2023</div>
+            <span class="exp-tag">Full-time</span>
+
+            <ul class="exp-bullets">
+              <li>
+                Architected a distributed <strong>Redis + SQL</strong> import
+                queue to throttle concurrent uploads, eliminating Kubernetes OOM
+                pod crashes.
+              </li>
+              <li>
+                Engineered a high-throughput Reconciliation Service auditing
+                <strong>76M+ data points</strong> per run with automated
+                conflict resolution.
+              </li>
+              <li>
+                Reduced critical API latencies from
+                <strong>180s timeouts to sub-second</strong> responses by
+                optimizing execution plans and data streaming.
+              </li>
+              <li>
+                Launched an <strong>AI-driven log analysis tool</strong> that
+                automated parsing of 20M+ logs, cutting debugging time from
+                hours to minutes.
+              </li>
+            </ul>
           </div>
-          <span class="exp-tag">Internship</span>
-          <ul class="exp-bullets">
-            <li>Achieved <strong>90% backend code coverage</strong> by engineering 150+ automated unit tests using Chai and Mocha; integrated SonarQube for continuous code quality analysis.</li>
-            <li>Developed API methods with Prisma Client + PostgreSQL on Node.js/Express.js and authored API documentation in Swagger.</li>
-          </ul>
+
+          <div class="exp-item reveal">
+            <div class="exp-header">
+              <div>
+                <div class="exp-title">
+                  Software Development Engineer — Intern
+                </div>
+                <div
+                  class="exp-title"
+                  style="font-weight: 400; margin-top: 0.15rem;"
+                >
+                  <span class="exp-company">Byteridge</span> · Remote
+                </div>
+              </div>
+              <div class="exp-meta">Aug 2023 — Oct 2023</div>
+            </div>
+            <span class="exp-tag">Internship</span>
+            <ul class="exp-bullets">
+              <li>
+                Achieved <strong>90% code coverage</strong> using Chai and
+                Mocha; integrated SonarQube for automated quality analysis.
+              </li>
+              <li>
+                Developed REST APIs using Prisma + PostgreSQL on Node.js and
+                authored full documentation in Swagger.
+              </li>
+            </ul>
+          </div>
         </div>
+      </section>
 
-      </div>
-    </section>
+      <hr class="divider" />
 
-    <hr class="divider" />
+      <!-- PROJECTS -->
+      <section id="projects">
+        <p class="section-label reveal">Work</p>
+        <h2 class="section-title reveal">Projects</h2>
 
-    <!-- PROJECTS -->
-    <section id="projects">
-      <p class="section-label reveal">Work</p>
-      <h2 class="section-title reveal">Projects</h2>
-
-      <div class="project-grid">
-
-        <a class="project-card reveal" href="https://chessmates-pr.vercel.app/" target="_blank" rel="noopener">
-          <div class="project-image">
-            <img loading="lazy" src="/images/Chessmate.png" alt="ChessMates project preview" />
-          </div>
-          <div class="project-card-body">
-            <div class="project-card-icon">
+        <div class="project-grid">
+          <a
+            class="project-card reveal"
+            href="https://chessmates-pr.vercel.app/"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="project-image">
+              <img
+                loading="lazy"
+                src="/images/Chessmate.png"
+                alt="ChessMates project preview"
+              />
+            </div>
+            <div class="project-card-body">
+              <div class="project-card-icon">
                 <i class="fa-solid fa-chess"></i>
-                <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:0.8rem;"></i>
-            </div>
-            <div class="project-name">ChessMates</div>
-            <p class="project-desc">A comprehensive social media platform for chess enthusiasts with real-time features, authentication, and Redis caching for optimal performance.</p>
-            <div class="project-tags">
+                <i
+                  class="fa-solid fa-arrow-up-right-from-square"
+                  style="font-size: 0.8rem"
+                ></i>
+              </div>
+              <div class="project-name">ChessMates</div>
+              <p class="project-desc">
+                A comprehensive social media platform for chess enthusiasts with
+                real-time features, authentication, and Redis caching for
+                optimal performance.
+              </p>
+              <div class="project-tags">
                 <span class="tag">Next.js</span>
                 <span class="tag">TypeScript</span>
                 <span class="tag">ShadCN</span>
                 <span class="tag">TanStack Query</span>
                 <span class="tag">Auth.js</span>
                 <span class="tag">Redis</span>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
 
-        <a class="project-card reveal" href="https://comfy-sloth-706e37.netlify.app/" target="_blank" rel="noopener">
-          <div class="project-image">
-            <img loading="lazy" src="/images/Comfysloth.png" alt="ComfySloth project preview" />
-          </div>
-          <div class="project-card-body">
-            <div class="project-card-icon">
-                <i class="fa-solid fa-bag-shopping"></i>
-                <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:0.8rem;"></i>
+          <a
+            class="project-card reveal"
+            href="https://comfy-sloth-706e37.netlify.app/"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="project-image">
+              <img
+                loading="lazy"
+                src="/images/Comfysloth.png"
+                alt="ComfySloth project preview"
+              />
             </div>
-            <div class="project-name">ComfySloth</div>
-            <p class="project-desc">A full-featured e-commerce platform with Auth0 authentication, Stripe payment integration, and styled components for a seamless shopping experience.</p>
-            <div class="project-tags">
+            <div class="project-card-body">
+              <div class="project-card-icon">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <i
+                  class="fa-solid fa-arrow-up-right-from-square"
+                  style="font-size: 0.8rem"
+                ></i>
+              </div>
+              <div class="project-name">ComfySloth</div>
+              <p class="project-desc">
+                A full-featured e-commerce platform with Auth0 authentication,
+                Stripe payment integration, and styled components for a seamless
+                shopping experience.
+              </p>
+              <div class="project-tags">
                 <span class="tag">React</span>
                 <span class="tag">Auth0</span>
                 <span class="tag">Stripe API</span>
                 <span class="tag">Styled Components</span>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
 
-        <a class="project-card reveal" href="https://rohan-travel-advisor-2023.netlify.app/" target="_blank" rel="noopener">
-          <div class="project-image">
-            <img loading="lazy" src="/images/Travel_advisor.png" alt="Travel Advisor project preview" />
-          </div>
-          <div class="project-card-body">
-            <div class="project-card-icon">
-                <i class="fa-solid fa-map-location-dot"></i>
-                <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:0.8rem;"></i>
+          <a
+            class="project-card reveal"
+            href="https://rohan-travel-advisor-2023.netlify.app/"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="project-image">
+              <img
+                loading="lazy"
+                src="/images/Travel_advisor.png"
+                alt="Travel Advisor project preview"
+              />
             </div>
-            <div class="project-name">Travel Advisor</div>
-            <p class="project-desc">A travel discovery app for finding restaurants, hotels, and attractions with location-based search and interactive map integration.</p>
-            <div class="project-tags">
+            <div class="project-card-body">
+              <div class="project-card-icon">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <i
+                  class="fa-solid fa-arrow-up-right-from-square"
+                  style="font-size: 0.8rem"
+                ></i>
+              </div>
+              <div class="project-name">Travel Advisor</div>
+              <p class="project-desc">
+                A travel discovery app for finding restaurants, hotels, and
+                attractions with location-based search and interactive map
+                integration.
+              </p>
+              <div class="project-tags">
                 <span class="tag">React</span>
                 <span class="tag">Material UI</span>
                 <span class="tag">Google Maps API</span>
+              </div>
             </div>
-          </div>
-        </a>
-
-      </div>
-    </section>
-
-    <hr class="divider" />
-
-    <!-- ABOUT -->
-    <section id="about">
-      <p class="section-label reveal">Me</p>
-      <h2 class="section-title reveal">About</h2>
-
-      <div class="about-grid">
-        <div class="about-text reveal">
-          <p>I'm a software engineer based in <em>Mumbai, India</em> — currently at Byteridge where I focus on backend infrastructure for enterprise fintech products.</p>
-          <p>I got into web development in late 2021 through a college project and haven't looked back since. I'm drawn to the intersection of <em>performance engineering</em> and <em>clean abstractions</em> — making systems fast, resilient, and maintainable.</p>
-          <p>Outside pure backend work, I build modular frontend component libraries and enjoy tinkering with AI tooling. Recently, I proposed and shipped an internal AI-powered log analysis tool that transformed how the team debugs production issues.</p>
-          <p>I graduated with a <em>CGPA of 9.78</em> in B.Tech Computer Science from Vidyalankar Institute of Technology (2020–2024).</p>
+          </a>
         </div>
+      </section>
 
-        <div class="skills-block reveal">
-          <div class="skill-group">
-            <div class="skill-group-label">Frontend</div>
-            <div class="skill-chips">
-              <span class="chip">Next.js</span>
-              <span class="chip">React</span>
-              <span class="chip">TypeScript</span>
-              <span class="chip">Redux</span>
-              <span class="chip">Tailwind</span>
-              <span class="chip">TanStack Query</span>
-              <span class="chip">Material UI</span>
-            </div>
+      <hr class="divider" />
+
+      <!-- ABOUT -->
+      <section id="about">
+        <p class="section-label reveal">Me</p>
+        <h2 class="section-title reveal">About</h2>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm a software engineer based in <em>Mumbai, India</em> —
+              currently at Byteridge where I focus on backend infrastructure for
+              enterprise fintech products.
+            </p>
+            <p>
+              I got into web development in late 2021 through a college project
+              and haven't looked back since. I'm drawn to the intersection of
+              <em>performance engineering</em> and <em>clean abstractions</em> —
+              making systems fast, resilient, and maintainable.
+            </p>
+            <p>
+              Outside pure backend work, I build modular frontend component
+              libraries and enjoy tinkering with AI tooling. Recently, I
+              proposed and shipped an internal AI-powered log analysis tool that
+              transformed how the team debugs production issues.
+            </p>
+            <p>
+              I graduated with a <em>CGPA of 9.78</em> in B.Tech Computer
+              Science from Vidyalankar Institute of Technology (2020–2024).
+            </p>
           </div>
-          <div class="skill-group">
-            <div class="skill-group-label">Backend</div>
-            <div class="skill-chips">
-              <span class="chip">Node.js</span>
-              <span class="chip">Express.js</span>
-              <span class="chip">.NET Core</span>
-              <span class="chip">Entity Framework</span>
-              <span class="chip">Prisma</span>
-              <span class="chip">Redis</span>
+
+          <div class="skills-block reveal">
+            <div class="skill-group">
+              <div class="skill-group-label">Frontend</div>
+              <div class="skill-chips">
+                <span class="chip">Next.js</span>
+                <span class="chip">React</span>
+                <span class="chip">TypeScript</span>
+                <span class="chip">Redux</span>
+                <span class="chip">Tailwind</span>
+                <span class="chip">TanStack Query</span>
+                <span class="chip">Material UI</span>
+              </div>
             </div>
-          </div>
-          <div class="skill-group">
-            <div class="skill-group-label">Databases</div>
-            <div class="skill-chips">
-              <span class="chip">MSSQL</span>
-              <span class="chip">PostgreSQL</span>
-              <span class="chip">MongoDB</span>
+            <div class="skill-group">
+              <div class="skill-group-label">Backend</div>
+              <div class="skill-chips">
+                <span class="chip">Node.js</span>
+                <span class="chip">Express.js</span>
+                <span class="chip">.NET Core</span>
+                <span class="chip">Entity Framework</span>
+                <span class="chip">Prisma</span>
+                <span class="chip">Redis</span>
+              </div>
             </div>
-          </div>
-          <div class="skill-group">
-            <div class="skill-group-label">Languages</div>
-            <div class="skill-chips">
-              <span class="chip">TypeScript</span>
-              <span class="chip">JavaScript</span>
-              <span class="chip">C#</span>
-              <span class="chip">SQL</span>
+            <div class="skill-group">
+              <div class="skill-group-label">Databases</div>
+              <div class="skill-chips">
+                <span class="chip">MSSQL</span>
+                <span class="chip">PostgreSQL</span>
+                <span class="chip">MongoDB</span>
+              </div>
             </div>
-          </div>
-          <div class="skill-group">
-            <div class="skill-group-label">DevOps & Cloud</div>
-            <div class="skill-chips">
-              <span class="chip">Docker</span>
-              <span class="chip">AWS</span>
-              <span class="chip">Kubernetes</span>
-              <span class="chip">SonarQube</span>
+            <div class="skill-group">
+              <div class="skill-group-label">Languages</div>
+              <div class="skill-chips">
+                <span class="chip">TypeScript</span>
+                <span class="chip">JavaScript</span>
+                <span class="chip">C#</span>
+                <span class="chip">SQL</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <div class="skill-group-label">DevOps & Cloud</div>
+              <div class="skill-chips">
+                <span class="chip">Docker</span>
+                <span class="chip">AWS</span>
+                <span class="chip">Kubernetes</span>
+                <span class="chip">SonarQube</span>
+              </div>
             </div>
           </div>
         </div>
+      </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div>
+        <div class="footer-name">Rohan Hazari</div>
+        <div class="footer-copy" style="margin-top: 0.3rem">
+          rohanhzri@gmail.com · Mumbai, India
+        </div>
       </div>
-    </section>
+      <div class="social-links">
+        <a
+          href="https://github.com/Rohan-Hazari"
+          target="_blank"
+          aria-label="GitHub"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/rohan-hazari-1a1199216/"
+          target="_blank"
+          aria-label="LinkedIn"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+        <a
+          href="https://twitter.com/rohanhzri"
+          target="_blank"
+          aria-label="Twitter"
+          ><i class="fa-brands fa-x-twitter"></i
+        ></a>
+      </div>
+    </footer>
 
-  </div>
-
-  <!-- FOOTER -->
-  <footer>
-    <div>
-      <div class="footer-name">Rohan Hazari</div>
-      <div class="footer-copy" style="margin-top:0.3rem;">rohanhzri@gmail.com · Mumbai, India</div>
+    <!-- FIXED SOCIAL -->
+    <div class="side-social">
+      <a
+        href="https://github.com/Rohan-Hazari"
+        target="_blank"
+        aria-label="GitHub"
+        ><i class="fa-brands fa-github"></i
+      ></a>
+      <a
+        href="https://www.linkedin.com/in/rohan-hazari-1a1199216/"
+        target="_blank"
+        aria-label="LinkedIn"
+        ><i class="fa-brands fa-linkedin-in"></i
+      ></a>
+      <a href="mailto:rohanhzri@gmail.com" aria-label="Email"
+        ><i class="fa-regular fa-envelope"></i
+      ></a>
     </div>
-    <div class="social-links">
-      <a href="https://github.com/Rohan-Hazari" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/rohan-hazari-1a1199216/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-      <a href="https://twitter.com/rohanhzri" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
-    </div>
-  </footer>
 
-  <!-- FIXED SOCIAL -->
-  <div class="side-social">
-    <a href="https://github.com/Rohan-Hazari" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/rohan-hazari-1a1199216/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-    <a href="mailto:rohanhzri@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
-  </div>
-
-  <script src="/js/app.js"></script>
-</body>
+    <script src="/js/app.js"></script>
+  </body>
 </html>

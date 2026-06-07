@@ -20,12 +20,14 @@
 
 .exp-company {
     color: var(--accent);
+    font-size: 1.15rem; /* Increased font size */
+    font-weight: 500;
 }
 
 .exp-meta {
     font-family: var(--mono);
-    font-size: 0.76rem;
-    color: var(--ink);
+    font-size: 0.9rem; /* Increased font size */
+    color: var(--ink-3);
     letter-spacing: 0.04em;
     white-space: nowrap;
 }

@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Theme Switcher Logic
     const themeToggle = document.getElementById('theme-toggle');
-    const themes = ['ocean', 'aurora', 'volcanic'];
+    const themes = ['light', 'ocean', 'night']; // Reduced to 3 themes
     let currentThemeIndex = themes.indexOf(localStorage.getItem('theme')) || 0;
     if (currentThemeIndex === -1) currentThemeIndex = 0;
 
     // Apply saved theme on load
     const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
+    if (savedTheme && savedTheme !== 'light') {
         document.documentElement.setAttribute('data-theme', savedTheme);
     }
 
@@ -16,15 +16,13 @@ document.addEventListener('DOMContentLoaded', () => {
             currentThemeIndex = (currentThemeIndex + 1) % themes.length;
             const newTheme = themes[currentThemeIndex];
             
-            if (newTheme === 'ocean') {
+            if (newTheme === 'light') {
                 document.documentElement.removeAttribute('data-theme');
             } else {
                 document.documentElement.setAttribute('data-theme', newTheme);
             }
             
             localStorage.setItem('theme', newTheme);
-            
-            // Optional: Update button text or icon based on theme
             console.log(`Theme switched to: ${newTheme}`);
         });
     }

@@ -1,8 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap');
 
 :root {
-    /* Default: Ocean Deep (Original) */
+    /* Default: Pure Light (formerly monochrome) */
+    --bg: #ffffff;
+    --bg-rgb: 255, 255, 255;
+    --surface: #ffffff;
+    --ink: #000000;
+    --ink-2: #1a1a1a;
+    --ink-3: #4d4d4d;
+    --accent: #000000;
+    --accent-light: rgba(0, 0, 0, 0.05);
+    --border: rgba(0, 0, 0, 0.2);
+
+    --mono: 'DM Mono', monospace;
+    --sans: 'DM Sans', sans-serif;
+    --serif: 'DM Serif Display', serif;
+
+    /* Wave Colors - Light default */
+    --w-bg: #ffffff;
+    --w-1: #e0e0e0;
+    --w-2: #cccccc;
+    --w-3: #999999;
+    --w-4: #666666;
+    --w-5: #333333;
+    --w-6: #000000;
+}
+
+[data-theme="ocean"] {
     --bg: #0a192f;
+    --bg-rgb: 10, 25, 47;
     --surface: #112240;
     --ink: #E3F0FF;
     --ink-2: #8892b0;
@@ -10,31 +36,87 @@
     --accent: #6ee2f6;
     --accent-light: rgba(110,226,246,0.1);
     --border: rgba(110,226,246,0.12);
-    --mono: 'DM Mono', monospace;
-    --sans: 'DM Sans', sans-serif;
-    --serif: 'DM Serif Display', serif;
+
+    /* Wave Colors - Ocean */
+    --w-bg: #001220;
+    --w-1: #0a192f;
+    --w-2: #132e53;
+    --w-3: #1c4579;
+    --w-4: #265da2;
+    --w-5: #2f77cc;
+    --w-6: #3991f9;
 }
 
-[data-theme="aurora"] {
-    --bg: #0b0e14;
-    --surface: #161b22;
-    --ink: #ecf2f8;
-    --ink-2: #8b949e;
-    --ink-3: #484f58;
-    --accent: #a371f7; /* Aurora Purple */
-    --accent-light: rgba(163, 113, 247, 0.1);
-    --border: rgba(163, 113, 247, 0.15);
-}
+/* Commented out themes 
+[data-theme="aurora"] { ... }
+[data-theme="volcanic"] { ... }
+*/
 
-[data-theme="volcanic"] {
+[data-theme="night"] {
     --bg: #000000;
-    --surface: #1a1a1a;
+    --bg-rgb: 0, 0, 0;
+    --surface: #111111;
     --ink: #ffffff;
-    --ink-2: #a0a0a0;
-    --ink-3: #404040;
-    --accent: #ff4d00; /* Volcanic Orange */
-    --accent-light: rgba(255, 77, 0, 0.1);
-    --border: rgba(255, 77, 0, 0.2);
+    --ink-2: #cccccc;
+    --ink-3: #888888;
+    --accent: #ffffff;
+    --accent-light: rgba(255, 255, 255, 0.1);
+    --border: rgba(255, 255, 255, 0.2);
+
+    /* Wave Colors - Dark Gray near text, White at screen edge */
+    --w-bg: #000000;
+    --w-1: #333333;
+    --w-2: #666666;
+    --w-3: #999999;
+    --w-4: #cccccc;
+    --w-5: #eeeeee;
+    --w-6: #ffffff;
+}
+
+/* Theme specific overrides for Light Mode & Night */
+html:not([data-theme]),
+[data-theme="night"] .bg-waves svg {
+    opacity: 1; 
+}
+
+/* Background Waves Animation */
+.bg-waves {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    background: var(--w-bg);
+}
+
+.bg-waves svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+    animation: wave-float 7s infinite alternate-reverse ease-in-out;
+    transform: scale(1.4);
+    transform-origin: right center; /* Ensure waves on right stay in view */
+}
+
+.bg-waves rect { fill: var(--w-bg); }
+.bg-waves path:nth-child(2) { fill: var(--w-1); }
+.bg-waves path:nth-child(3) { fill: var(--w-2); }
+.bg-waves path:nth-child(4) { fill: var(--w-3); }
+.bg-waves path:nth-child(5) { fill: var(--w-4); }
+.bg-waves path:nth-child(6) { fill: var(--w-5); }
+.bg-waves path:nth-child(7) { fill: var(--w-6); }
+
+@keyframes wave-float {
+    0% { transform: scale(1.4) translateY(-10%); }
+    100% { transform: scale(1.4) translateY(10%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .bg-waves svg {
+        animation: none;
+        transform: scale(1.4);
+    }
 }
 
 /* Theme Toggle Button Style */
@@ -77,31 +159,7 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
     position: relative;
-    text-shadow: 0 1px 3px rgba(0,0,0,0.3); /* Sublte shadow for better legibility */
-}
-
-body::before {
-    content: '';
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: url(/images/layered-waves-haikei.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 10% 10%;
-    background-attachment: fixed;
-    z-index: -1;
-    animation: wave 20s infinite alternate-reverse linear;
-    opacity: 0.6; /* Slight transparency to make background color more prominent */
-}
-
-@keyframes wave{
-    0%{
-        background-position: left 0%;
-    }
-    100%{
-        background-position: left 100%;
-    }
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 ::-webkit-scrollbar { width: 4px; }
@@ -114,9 +172,10 @@ nav {
     z-index: 100;
     display: flex; align-items: center; justify-content: space-between;
     padding: 1.25rem 2.5rem;
-    background: rgba(10,25,47,0.88);
+    background: rgba(var(--bg-rgb, 10, 25, 47), 0.85); /* Use RGB for transparency */
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border);
+    transition: all 0.3s ease;
 }
 
 .nav-logo {
@@ -174,8 +233,9 @@ nav {
 .page { padding-top: 80px; }
 
 section {
-    max-width: 900px;
-    margin: 0 auto;
+    max-width: 1000px;
+    margin-left: 5%;
+    margin-right: auto;
     padding: 6rem 2rem;
 }
 
@@ -301,8 +361,9 @@ section {
 
 /* DIVIDER */
 .divider {
-    max-width: 900px;
-    margin: 0 auto;
+    max-width: 1000px;
+    margin-left: 5%;
+    margin-right: auto;
     padding: 0 2rem;
     border: none;
     border-top: 1px solid var(--border);
@@ -327,6 +388,8 @@ section {
 
 /* MOBILE */
 @media (max-width: 768px) {
+    .bg-waves { display: none; } /* Remove waves for mobile */
+
     nav { padding: 1rem 1.25rem; }
 
     .nav-links {
@@ -334,7 +397,7 @@ section {
         flex-direction: column;
         position: absolute;
         top: 100%; left: 0; right: 0;
-        background: rgba(10,25,47,0.97);
+        background: rgba(var(--bg-rgb), 0.98);
         backdrop-filter: blur(12px);
         border-bottom: 1px solid var(--border);
         padding: 1rem 0;
@@ -345,5 +408,14 @@ section {
     .nav-links a { padding: 0.75rem 1.5rem; }
     .hamburger { display: block; }
 
-    section { padding: 4rem 1.25rem; }
+    section { 
+        padding: 4rem 1.25rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .divider {
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+    }
 }
